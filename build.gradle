@@ -28,19 +28,19 @@ dependencies {
 }
 
 testing {
-    suites {
-        bddTest(JvmTestSuite) {
-            dependencies {
-                implementation project()
-            }
+	suites {
+		bddTest(JvmTestSuite) {
+			dependencies {
+				implementation project()
+			}
 			configurations {
 				bddTestImplementation {
 					extendsFrom testImplementation
 					extendsFrom testRuntimeOnly
 				}
 			}
-        }
-    }
+		}
+	}
 }
 
 tasks.named('test') {
