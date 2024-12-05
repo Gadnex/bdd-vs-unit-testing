@@ -107,7 +107,7 @@ Using gradle java plugin to separate BDD tests from the standard unit tests.
 
 In the [build.gradle](./build.gradle) file we added the following configuration:
 
-```json
+```
 testing {
   suites {
     bddTest(JvmTestSuite) {
@@ -135,7 +135,7 @@ I am of the opinion that a failing BDD tests should not result in a failed CI/CD
 as this will prevent us from writing BDD requirements before they are implemented. But if your situation is different,
 you can add the following configuration to your [build.gradle](./build.gradle) file.
 
-```json
+```
 tasks.named('check') {
   dependsOn testing.suites.bddTest
 }
@@ -149,7 +149,7 @@ Then statements.
 To improve this we added the [Allure report](https://allurereport.org/) gradle plugin to
 the [build.gradle](./build.gradle) file.
 
-```json
+```
 id 'io.qameta.allure' version '2.12.0'
 ```
 
