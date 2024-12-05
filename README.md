@@ -165,3 +165,11 @@ test report.
 
 To view the test report first run the gradle **bddTest** task to run the tests.
 Then run the gradle **allureServe** task to view the test report.
+
+Here is as example of the main Allure report screen that shows statistics about the test results:
+
+![BDD](/Documentation/Allure%20report%20main.png)
+
+Here is as example of the Allure report behaviours screen that shows the BDD specification of a specific test:
+
+![BDD](/Documentation/Allure%20report%20behaviours.png)

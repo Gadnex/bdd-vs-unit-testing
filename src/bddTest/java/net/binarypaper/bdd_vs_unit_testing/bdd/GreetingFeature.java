@@ -1,5 +1,6 @@
 package net.binarypaper.bdd_vs_unit_testing.bdd;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,6 +19,7 @@ class GreetingFeature {
     private GreetingDSL greeter;
 
     @Test
+    @DisplayName("Greet John")
     void greetJohn() {
         greeter.givenIAmSpeakingToAClientWithName("John")
                 .whenIGreetTheClient()
@@ -25,6 +27,7 @@ class GreetingFeature {
     }
 
     @Test
+    @DisplayName("Greet William")
     void greetWilliam() {
         greeter.givenIAmSpeakingToAClientWithName("William");
         greeter.whenIGreetTheClient();
