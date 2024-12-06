@@ -21,8 +21,8 @@ When a unit test fails, it means that the software does not behave as the develo
 
 Unit tests tend to be closely coupled to the code that it tests. For example, a unit test class **PersonServiceTest**
 most likely tests a class called **PersonService** and its internal classes that form a part of the same component.
-The **PersonServiceTest** would hold a reference to a **PersonService** and call methods directly on it. Thus, if the *
-*PersonService** is refactored to change the method signature, the **PersonServiceTest** would no longer compile and
+The **PersonServiceTest** would hold a reference to a **PersonService** and call methods directly on it. Thus, if the
+**PersonService** is refactored to change the method signature, the **PersonServiceTest** would no longer compile and
 would have to be refactored as well.
 
 Here is a diagram to show how unit testing works:
@@ -125,9 +125,9 @@ testing {
 }
 ```
 
-This configuration sets up gradle test suite and a gradle task called **bddTest**.
-The source code for these tests will be placed in **/src/bddTest/java** and the resources will be under *
-*/src/bddTest/resources**.
+This configuration sets up a gradle test suite and a gradle task called **bddTest**.
+The source code for these tests will be placed in **/src/bddTest/java** and the resources will be under
+**/src/bddTest/resources**.
 
 If you run the gradle **build** or **check** tasks, the BDD tests will not be run by default.
 
