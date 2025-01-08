@@ -3,10 +3,11 @@ plugins {
 	id 'org.springframework.boot' version '3.4.0'
 	id 'io.spring.dependency-management' version '1.1.6'
 	id 'io.qameta.allure' version '2.12.0'
+	id "pl.allegro.tech.build.axion-release" version "1.18.16"
 }
 
 group = 'net.binarypaper'
-version = '0.0.1-SNAPSHOT'
+version = scmVersion.version
 
 java {
 	toolchain {
