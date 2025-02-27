@@ -1,7 +1,11 @@
 # bdd-vs-unit-testing
 
-This is a sample project to demonstrate the differences between traditional Unit testing and Behaviour Driven
-Development (BDD) testing.
+This article and the accompanying sample project compares traditional Unit testing and Behaviour Driven
+Development (BDD) testing. We will attempt to show that these are complimentary approaches with each addressing a 
+different goal and concern.
+
+There seems to be some confusion in the world about what BDD is. It is often seen as a style or a different approach of 
+writing unit or integration test. We intend to show that BDD has a completely different goal.  
 
 The project also acts as a reference of how to separate and configure the two testing types in a Gradle project.
 
