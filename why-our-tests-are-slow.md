@@ -269,7 +269,7 @@ across all architecture layers we could say:
 We would also argue that code coverage is more important in the domain layer than the infrastructure
 layer.
 
-## Why are slow tests a problem
+## Why are slow tests a problem?
 
 It is worth giving some explanation why slow tests are a problem, but this requires some speculation.
 
